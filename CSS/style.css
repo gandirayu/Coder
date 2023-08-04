@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+* {
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    position: sticky;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+    margin-bottom: 3%;
+}
+
+header > h1 {
+    font-size: 40px;
+    margin: 0px;
+    position: relative;
+    left: 7%;
+}
+
+nav {
+    padding-right: 25px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    margin-right: 15px;
+}
+
+nav > a:hover {
+    color: #FFC108;
+}
+
+section {
+    margin: 0% 8% 10% 8%;
+}
+
+#landing, #about {
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+p {
+    color: #979797;
+    font-size: large;
+}
+
+#landing p {
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #FFC108;
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    font-size: medium;
+}
+
+.btn:hover {
+    background-color: white;
+    border: 2px solid #FFC108;
+    color: black;
+}
+
+.border {
+    background-color: white;
+    color: black;
+    border: 2px solid #FFC108;
+    padding: 10px 25px;
+    margin-right: 10px;
+}
+
+.border:hover {
+    background-color: #FFC108;
+    color: white;
+    border: none;
+}
+
+.judul {
+    font-size: xx-large;
+    margin: 0px 0px 10px 0px;
+}
+
+.all_card_a {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.a_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.a_card > h1 {
+    font-size: xx-large;
+    margin: 0px 0px 15px 0px;
+}
+
+.garis {
+    height: 8px;
+    width: 45px;
+    background-color: #FFC108;
+}
+
+.lingkaran {
+    width: 70px;
+    height: 70px;
+    background-color: #FFC108;
+    border-radius: 50%;
+    position: relative;
+}
+
+.lingkaran h1 {
+    position: absolute;
+    top: 50%;
+    left: 180%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+
+.service_h {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.all_card_s {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8%;
+}
+
+.all_card_s img {
+    border-radius: 0px;
+    width: 100%;
+}
+
+.s_card1 > p, .s_card2 > p, .s_card3 > p{
+    font-size: small;
+}
+
+.s_card1, .s_card2, .s_card3 {
+    text-align: center;
+    box-shadow: 1px 1px 5px rgb(175, 174, 174);
+    filter: grayscale(3);
+    transition-duration: 0.5s;
+}
+
+.s_card1:hover, .s_card2:hover, .s_card3:hover {
+    transform: scale(1.1,1.1);
+    filter: grayscale(0);
+}
+
+.all_contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin-top: 5%;
+}
+
+.lokasi h1 {
+    margin-top: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #FFC108;
+    width: max-content;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.all_form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "nama subject"
+                            "email hp"
+                            "pesan pesan";
+    column-gap: 25px;
+    margin: 0px 20px 0px 20px;
+}
+
+#f_nama {
+    grid-area: nama;
+}
+
+#f_subject {
+    grid-area: subject;
+}
+
+#f_email {
+    grid-area: email;
+}
+
+#f_hp {
+    grid-area: hp;
+}
+
+#f_pesan {
+    grid-area: pesan;
+}
+
+.all_form label {
+    font-size: large;
+    font-weight: bold;
+}
+
+.all_form input {
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    border-bottom: 1.5px solid rgb(110, 110, 110);
+    font-size: medium;
+    width: 100%;
+}
+
+.all_form input:focus {
+    border-bottom: 1.5px solid #FFC108;
+}
+
+form button {
+    border: none;
+    cursor: pointer;
+    margin: 0px 10px 10px 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFC108;
+    padding: 10px;
+}
+
+footer h1 {
+    margin-bottom: 0px;
+}
+
+footer p {
+    font-size: medium;
+    color: white;
+}
+
+.kiri {
+    color: white;
+    position: relative;
+    left: 5%;
+    width: 30%;
+}
+
+.kanan {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.kanan a {
+    color: white;
+    margin: 10px;
+}
+
+.kanan a:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 900px) {
+    .all_card_s {
+        column-gap: 3%;
+    }
+
+    form h1 {
+        margin: 30px 20px 40px 20px;
+    }
+
+    .all_form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all_contact {
+        column-gap: 5%;
+    }
+
+    .kiri {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .all_card_s {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+    }
+
+    .s_card1, .s_card2, .s_card3 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .all_contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .all_form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "nama subject"
+                                "email hp"
+                                "pesan pesan";
+        column-gap: 25px;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .lokasi h1 {
+        margin: 40px 0px 20px 0px;
+        text-align: center;
+    }
+
+    .lokasi {
+        width: 90%;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    .kanan {
+        position: relative;
+        right: 5%;
+    }
+
+    .kiri {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    #landing{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #landing img {
+        margin: 20px 0px;
+    }
+
+    #about img {
+        margin: 50px 0px 20px 0px;
+    }
+
+    .kiri {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .service_h {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service_h .btn {
+        display: none;
+    }
+
+    .all_form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .lokasi {
+        width: 100%;
+    }
+
+    .kiri {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    header {
+        box-shadow: 5px 0px 5px rgb(175, 175, 175);
+        padding: 15px 0px;
+    }
+
+    header h1 {
+        font-size: xx-large;
+    }
+
+    nav {
+        display: none;
+    }
+
+    section {
+        margin: 0% 5% 10% 5%;
+    }
+
+    img {
+        width: 95%;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    .judul {
+        font-size: x-large;
+    }
+
+    .s_card1, .s_card2, .s_card3 {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .lokasi {
+        width: 90%;
+    }
+
+    .kiri h1 {
+        font-size: 40px;
+        margin: 20px 0px;
+    }
+
+    .kiri p {
+        display: none;
+    }
+
+    .kanan {
+        width: 40%;
+    }
+}
